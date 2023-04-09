@@ -78,8 +78,7 @@ async function handleLoadMore(e) {
 
 function createGalleryMarckup(images) {
     return images.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
-        return `
-            <div class="photo-card">
+        return `<div class="photo-card">
             <a class = "gallery-link" href = "${largeImageURL}">
             <div class = "img-container">
                 <img src="${webformatURL}" alt="${tags}" class = "img-card" loading="lazy" width = ""300px/>
