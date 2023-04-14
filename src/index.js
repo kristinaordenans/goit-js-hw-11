@@ -1,3 +1,6 @@
+
+// РАБОЧИЙ ВАРИАНТ ОДОБРЕННЫЙ
+
 import Notiflix from "notiflix";
 import { PixabayAPI } from "./fetchPhoto";
 import SimpleLightbox from "simplelightbox";
@@ -12,7 +15,6 @@ const formEl = document.querySelector(`#search-form`);
 const galleryEl = document.querySelector(`.gallery`);
 const loadMoreBtbEl = document.querySelector(`.load-more`);
 loadMoreBtbEl.classList.add('is-hiden');
-
 
 formEl.addEventListener(`submit`, handleSearchPhotos);
 loadMoreBtbEl.addEventListener(`click`, handleLoadMore);
@@ -103,6 +105,7 @@ function createGalleryMarckup(images) {
 } 
 
 
+// НАЧАТЬ СНАЧАЛА
 
 
 
